@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathshala</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="./js/main.js"></script>
+</head>
+<body class="body" onload="onloadInstruction()">
+    <div>
+        <header class="header">
+            <canvas id="myCanvas" width="300" height="50" style="border:5px solid #423939; font-family: s;">
+                Your browser does not support the HTML5 canvas tag.</canvas>
+                
+                <script>
+                var c=document.getElementById("myCanvas");
+                var ctx=c.getContext("2d");
+                ctx.font="30px serif";
+                ctx.strokeText("Live Virtual Class",20,40);
+                </script>
+                
+            <!-- <h1>Live Virtual Class</h1> -->
+        </header>
+        
+    
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="corosal.html">Corosal</a>
+            <a href="Courses.html">All Courses</a>
+            <a href="registration.html">Registration</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="lvcResults.html">lvcResults</a>
+            <a href="ContactUS.html">Contact us</a>
+            <a href="Test.html">Give Test</a>
+            <a href="" onclick="checkSubscription()">Subscription</a>
+        </nav>
+    </div>
+    
+    <div class="matter">
+            <div class="text">
+                <h1><i>The new way of learning...</i></h1>
+                <p><i>"Explore boundless learning through immersive live virtual classes. Connect globally, engage interactively, and excel with real-time discussions, multimedia presentations, and flexible schedules. Join us in shaping the future of education today."</i></p>
+            </div>
+            <div class="image">
+                <img src="../images/coding_image.png" alt="image not supported">
+            </div>
+           
+    </div>
+
+    <div>
+        <select id="courseDetails" onchange="getInstruction()">
+            <option value="Select Courses">Select Courses</option>
+            <option value="mevn" >Mevn</option>
+            <option value="mern" >Mern</option>
+            <option value="mean" >Mean</option>
+        </select>
+    </div>
+    
+    <br><br>
+    <footer class="footer">
+        <p>Designed and Developed By : Abhijeet Atmapoojya</p>
+        <!-- <p>Software Engineer I, Epsilon India</p> -->
+    </footer>
+
+</body>
+</html>
